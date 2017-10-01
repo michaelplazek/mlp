@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Grid, Image } from 'semantic-ui-react'
+import MasterTerminal from './components/MasterTerminal';
 
 class Home extends React.Component{
   constructor(props){
@@ -11,18 +10,7 @@ class Home extends React.Component{
 
 
   render(){
-
-    return null;
-    // (
-    //   {/*<Grid columns={2}>*/}
-    //     {/*<Grid.Row>*/}
-    //       {/*<Grid.Column>*/}
-    //         {/*<Image src='/self.jpg' size='medium' />*/}
-    //       {/*</Grid.Column>*/}
-    //       {/*<Grid.Column>some text</Grid.Column>*/}
-    //     {/*</Grid.Row>*/}
-    //   {/*</Grid>*/}
-    //   );
+    return <MasterTerminal />
   }
 }
 

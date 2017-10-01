@@ -21,7 +21,6 @@
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "semantic-ui-react": "^0.74.2",
     "terminal-in-react": "^3.5.1"
   },
   "devDependencies": {
