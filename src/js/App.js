@@ -1,13 +1,37 @@
 import React from 'react';
-import GrommetApp from 'grommet/components/App';
+import { Container, Menu } from 'semantic-ui-react'
 
-const App = (props) => (
+class App extends React.Component{
+  constructor(props){
+    super(props);
 
-  <GrommetApp centered={false}>
+    this.state = { activeItem: 'home' }
+  }
 
-      {props.children}
+  handleItemClick(){
+    return (e, { name }) => this.setState({ activeItem: name });
+  }
 
-  </GrommetApp>
-);
+  render(){
+    const { activeItem } = this.state;
+
+    return(
+      <Container>
+
+        <Menu pointing secondary size="huge">
+          <Menu.Menu position="right">
+            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+            <Menu.Item name='about' active={activeItem === 'about'} onClick={this.handleItemClick} />
+            <Menu.Item name='resume' active={activeItem === 'resume'} onClick={this.handleItemClick} />
+            <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick} />
+          </Menu.Menu>
+        </Menu>
+
+        {this.children}
+
+      </Container>
+    );
+  }
+}
 
 export default App;
