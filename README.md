@@ -1,3 +1,3 @@
-## Plazek Properties Homepage
+## Homepage of Michael
 
-Under construction.
+Coming soon.
