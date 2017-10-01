@@ -1,13 +1,18 @@
 import React from 'react';
-import GrommetApp from 'grommet/components/App';
 
-const App = (props) => (
+class App extends React.Component{
+  constructor(props){
+    super(props);
+  }
 
-  <GrommetApp centered={false}>
+  render(){
 
-      {props.children}
-
-  </GrommetApp>
-);
+    return(
+      <div id="main">
+        {this.children}
+      </div>
+    );
+  }
+}
 
 export default App;
