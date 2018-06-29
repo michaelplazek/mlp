@@ -1,4 +1,4 @@
-export default function reducer(initialState, handlers) {
+export function reducer(initialState, handlers) {
   return (state = initialState, action) => {
     const handler = handlers[action.type];
     if (!handler) {
@@ -12,3 +12,5 @@ export default function reducer(initialState, handlers) {
     return { ...state, ...newState };
   };
 }
+
+export default { reducer };

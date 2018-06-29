@@ -18,7 +18,6 @@ ReactDOM.render(
         <Route path="/" component={App}/>
         <Route exact path='/home' component={Home}/>
         <Route path="/terminal" component={MasterTerminal}/>
-        {/*<Route path="/portfolio" component={Portfolio} />*/}
         <Route path="/resume" component={Resume} />
       </div>
     </Router>

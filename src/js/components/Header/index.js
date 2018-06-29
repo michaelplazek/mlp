@@ -1,14 +1,10 @@
 import React from 'react';
-import NavigationBar from './components/NavigationBar';
-import { Container } from 'semantic-ui-react';
-import IntroSection from './components/IntroSection';
-import About from './screens/About';
+import { Grid, AppBar } from '@material-ui/core';
 
-const App = () => (
-  <div id="app-container">
-    <Header />
-    {this.children}
-  </div>
+const Header = () => (
+  <AppBar position="static">
+    <Grid></Grid>
+  </AppBar>
 );
 
-export default App;
+export default  Header;
