@@ -15,15 +15,13 @@ class NavigationBar extends React.Component{
 
   render(){
 
-    const { activeItem } = this.state;
-
     return (
-      <Menu borderless attached inverted size="massive">
+      <Menu fluid borderless attached inverted size="massive">
         <Menu.Item
           as={Link}
-          to="/"
+          to="/home"
           name='home'
-          active={activeItem === 'home'}
+          active={this.props.screen === 'home'}
           onClick={this.handleItemClick}
           className="menu-button"
         >
@@ -31,8 +29,10 @@ class NavigationBar extends React.Component{
         </Menu.Item>
 
         <Menu.Item
+          as={Link}
+          to="/about"
           name='about'
-          active={activeItem === 'about'}
+          active={this.props.screen === 'about'}
           onClick={this.handleItemClick}
           className="menu-button"
         >
@@ -40,8 +40,10 @@ class NavigationBar extends React.Component{
         </Menu.Item>
 
           <Menu.Item
+            as={Link}
+            to="/contact"
             name='contact'
-            active={activeItem === 'contact'}
+            active={this.props.screen === 'contact'}
             onClick={this.handleItemClick}
             className="menu-button"
           >
@@ -49,8 +51,10 @@ class NavigationBar extends React.Component{
           </Menu.Item>
 
         <Menu.Item
+          as={Link}
+          to="/resume"
           name='resume'
-          active={activeItem === 'resume'}
+          active={this.props.screen === 'resume'}
           onClick={this.handleItemClick}
           className="menu-button"
         >

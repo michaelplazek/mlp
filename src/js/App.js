@@ -1,25 +1,20 @@
 import React from 'react';
-import NavigationBar from './components/NavigationBar';
-import { Container } from 'semantic-ui-react';
-import IntroSection from './components/IntroSection';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
-class App extends React.Component{
-  constructor(props){
-    super(props);
-  }
+import rootReducer from './reducers';
 
-  render(){
+import Header from './components/Header';
 
-    return(
-      <div id="main">
-        <Container fluid className="main-container">
-          <NavigationBar />
+const store = createStore(rootReducer);
 
-        {this.children}
-        </Container>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <div id="app-container">
+      <Header />
+      {this.children}
+    </div>
+  </Provider>
+);
 
 export default App;
