@@ -40,16 +40,18 @@ class MasterTerminal extends React.Component {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh"
+          height: "93.6vh"
         }}
       >
         <Terminal
+          color="white"
+          prompt="white"
           promptSymbol="$"
           hideTopBar={true}
           allowTabs={false}
           startState='maximised'
-          style={{ fontSize: "1.5em"}}
-          msg="Hello World... It is my primary function to assist you. Type 'help' for a list of commands."
+          style={{ fontSize: "1.3em"}}
+          msg="Hello World. It is my primary function to assist you. Type 'help' for a list of commands."
 
           commands={{
             ask: {

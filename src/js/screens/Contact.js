@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Header, Dimmer, Container } from 'semantic-ui-react';
 
-class Home extends React.Component{
+class Contact extends React.Component{
   constructor(props){
     super(props);
 
@@ -11,12 +11,12 @@ class Home extends React.Component{
 
   render(){
     return (
-      <Container fluid className="home-container">
-        <h1>HOME TEST</h1>
+      <Container fluid className="contact-container">
+
       </Container>
 
     )
   }
 }
 
-export default Home;
+export default Contact;
