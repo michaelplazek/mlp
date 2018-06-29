@@ -8,11 +8,11 @@ import Header from './components/Header';
 
 const store = createStore(rootReducer);
 
-const App = () => (
+const App = (props) => (
   <Provider store={store}>
     <div id="app-container">
       <Header />
-      {this.children}
+      {props.children}
     </div>
   </Provider>
 );
