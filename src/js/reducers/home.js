@@ -1,4 +1,4 @@
-import reducer from '../utils/reducer';
+import { reducer } from '../utils/reducer';
 
 export const initialState = {
 

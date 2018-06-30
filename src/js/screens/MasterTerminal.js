@@ -1,6 +1,6 @@
 import React from 'react';
 import Terminal from 'terminal-in-react';
-import 'terminal-in-react/lib/css/index.css';
+// import 'terminal-in-react/lib/css/index.css';
 
 class MasterTerminal extends React.Component {
   constructor(props) {

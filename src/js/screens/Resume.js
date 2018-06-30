@@ -1,22 +1,8 @@
 import React from 'react';
-import { Image, Header, Dimmer, Container } from 'semantic-ui-react';
+import { Box } from 'grommet';
 
-class Resume extends React.Component{
-  constructor(props){
-    super(props);
-
-  }
-
-
-
-  render(){
-    return (
-      <Container fluid className="resume-container">
-
-      </Container>
-
-    )
-  }
-}
+const Resume = () => (
+  <Box />
+);
 
 export default Resume;
