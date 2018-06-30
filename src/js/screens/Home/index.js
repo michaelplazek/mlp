@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box } from 'grommet';
 
-const Resume = () => (
+const Home = () => (
   <Box />
 );
 
-export default Resume;
+export default Home;
