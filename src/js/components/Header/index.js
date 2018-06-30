@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { compose } from 'recompose';
 import { Box, RoutedButton } from 'grommet';
 import { Terminal } from 'grommet-icons';
